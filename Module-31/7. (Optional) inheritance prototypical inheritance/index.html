@@ -13,12 +13,13 @@
                 this.price = price;
                 this.model = model;
             }
-            move(){
-                console.log('gari chole na chole na chole na re');
+            move(move){
+                console.log(`gari chole na chole na chole na re ${move}`);
             }
         }
         const privateCar = new Vehicle('Private Car', '2000000', 'X-Corolla');
         console.log(privateCar);
+        privateCar.move('Dhaka to Rajshahi');
 
         class Bus extends Vehicle{
             constructor(name, price, model, seat, ticketPrice){
@@ -38,7 +39,7 @@
             }
 
         }
-        const truck = new Vehicle('Truck', '2500000', 'Truck-X',  '5-Ton');
+        const truck = new Vehicle('Truck', '2500000', 'Truck-X',  '10-Ton');
         console.log(truck);
 
 
