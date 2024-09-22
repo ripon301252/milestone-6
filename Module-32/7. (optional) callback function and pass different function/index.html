@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback function and pass different function</title>
+</head>
+<body>
+    <script>
+
+        function greeting(person){
+           console.log(greetingHandler()) ;
+        }
+        const numbers = [4, 5, 6, 8];
+        const name = 'Halim mama';
+        const laptop = {name: 'Dell', brand: 'Lenovo', memory: '500 gb', price: 65000}
+        greeting(numbers);
+        greeting(name);
+        greeting(laptop );
+        greeting(laptop.name);
+        greeting(laptop.brand);
+        greeting(laptop.memory);
+        greeting(laptop.price);
+
+        function greetingHandler(){
+            console.log('Good Morning');
+        }
+        greeting(greetingHandler);
+
+
+
+    </script>
+</body>
+</html>
