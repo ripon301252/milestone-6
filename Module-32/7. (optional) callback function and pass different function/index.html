@@ -9,7 +9,8 @@
     <script>
 
         function greeting(person){
-           console.log(greetingHandler()) ;
+           console.log(person) ;
+          
         }
         const numbers = [4, 5, 6, 8];
         const name = 'Halim mama';
@@ -22,10 +23,37 @@
         greeting(laptop.memory);
         greeting(laptop.price);
 
-        function greetingHandler(){
-            console.log('Good Morning');
+        /*
+        function greetings(greetingHandler, name){
+           //console.log(greetingHandler());
+           greetingHandler(name)
         }
-        greeting(greetingHandler);
+        function greetingHandler(name){
+            console.log('Good Morning', name);
+        }
+        greetings(greetingHandler, 'Tom Hanks');
+        */
+
+
+       function greetings(greetingHandler, naam){
+        //console.log('Hello')
+        greetingHandler(naam);
+       }
+       function greetingHandler(naam){
+            console.log('Good Morning', naam)
+       }
+       greetings(greetingHandler, 'Tom Hanks');
+       greetings(greetingHandler, 'BAk BAK');
+
+       /*
+       document.getElementById('btn-submit').addEventListener('click', function(){
+            console.log('submit button clicked');
+       })
+       */  
+       function submitHandler(){
+            console.log('submit button clicked')
+       }
+       document.getElementById('btn-submit').addEventListener('click', submitHandler)
 
 
 
